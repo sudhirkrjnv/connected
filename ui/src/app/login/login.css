@@ -1,0 +1,76 @@
+.login-container {
+    width: 65%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form {
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+} 
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 5px 0px 5px 0px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+input{
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+form{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 8px; 
+    width: 100%; 
+    margin-top: 20px;
+}
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2b4beb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.image-container {
+    width: 35%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width:576px) and (max-width:991px){
+    .image-container{
+        display: none;
+    }
+    
+}
+@media only screen and (min-width:200px) and (max-width:576px){
+    .image-container{
+        display: none;
+    }
+    .login-container {
+        width: 65%;
+    }
+}
