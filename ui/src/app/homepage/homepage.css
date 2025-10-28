@@ -1,0 +1,9 @@
+*{
+    background-color: #efefefa1;
+}
+.right-container{
+    position: absolute;
+    inset: 8vh 0px auto auto;
+    z-index: 100;
+    display: flex;
+}

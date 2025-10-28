@@ -5,12 +5,13 @@
     flex-grow: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
     padding: 0 2rem;
     box-sizing: border-box;
+    height: 8vh;
 }
 .logoContainer{
     display: flex;
@@ -191,6 +192,9 @@
         display: flex;
         align-items: center;
         gap: 0rem;
+    }
+    .search, .addPost{
+        display: block;
     }
 
 }

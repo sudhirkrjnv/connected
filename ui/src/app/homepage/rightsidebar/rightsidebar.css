@@ -1,0 +1,25 @@
+.rightmost-container{
+    width: 15vw;
+    padding: 10px;
+    background-color: #fff;
+}
+.subtitles{
+    font-weight: bold;
+    padding: 0px 5px 5px 5px;
+    cursor: pointer;
+}
+.fa-regular ,.fa-solid {
+    margin-right: 1.5rem;
+    padding: 10px;
+    color:#555;
+}
+.rightmost-container-boxes{
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    min-height: 25vh;
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
