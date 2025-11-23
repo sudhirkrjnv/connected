@@ -2,8 +2,16 @@
     background-color: #efefefa1;
 }
 .right-container{
-    position: absolute;
-    inset: 8vh 0px auto auto;
-    z-index: 100;
+    position: relative;
+    inset: 2px 0px auto auto;
     display: flex;
+}
+.feed-container{
+    background-color: transparent;
+    height: calc(100vh - 56px);
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }

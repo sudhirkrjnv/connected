@@ -67,6 +67,12 @@ button[type="submit"] {
     justify-content: center;
 }
 
+.loginAccount {
+    margin-top: 15px;
+    color: #79797c;
+    font-weight: 600;
+}
+
 @media only screen and (min-width:576px) and (max-width:991px){
     .image-container{
         display: none;

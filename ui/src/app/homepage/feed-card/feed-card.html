@@ -1,1 +1,38 @@
-<p>feed-card works!</p>
+<div *ngFor="let post of posts">
+    <div class="feed-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-right: 15px;">
+            <div class="avatar-section">
+                <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="user-details">
+                    <div class="postAuthor">{{post.postAuthor}}</div>
+                    <!-- <div class="postAuthor">Sudhir Kumar Patel</div> -->
+                    <div class="postTimestamp">{{post.postTimestamp}}</div>
+                    <!-- <div class="postTimestamp">Monday, 12 August 6:40 PM.</div> -->
+                </div>
+            </div>
+            <div class="options-icon">
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+        <div class="feed-contents">
+            <!-- <div class="text-contents">My girlfriend prepared a surprise trip for me. I'm so thankful and love her very much. Here are some of the best shots from our trip to Ladakh.</div> -->
+            <div class="textContents captions">{{ post.caption }}</div>
+            <div class="image-contents">
+                <img *ngFor="let image of post.images; let i = index" class="cell" [src]="image.src" [alt]="'Image ' + (i + 1) + ' of post ' + post.id">
+            </div>
+            <!-- <div class="image-contents">
+                <img class="cell" src="https://th.bing.com/th/id/R.d58bbce932eb778fa74b6a99c9fe5bf1?rik=1Q%2fCdk6PqTQF3w&riu=http%3a%2f%2fwww.indiatours.net%2fimg%2fplaceholders%2f800x600%2f688725db35a0d99628b6b78a69bb057c.jpg&ehk=tHG6rpOpy9DCPSJds%2fc%2fo7d2hOYFyhFY%2fruxFC78D%2bg%3d&risl=&pid=ImgRaw&r=0" alt="Ladakh Image 2">
+                <img class="cell" src="https://xiradestinations.com/wp-content/uploads/2020/04/leh88-1536x1024.jpg" alt="Ladakh Image 1">
+                <img src="https://res.cloudinary.com/dyiffrkzh/image/upload/v1706078211/bbj/gcdyyzrb5eeztzntkvpl.jpg" alt="Ladakh Image 2">
+            </div> -->
+        <div class="feed-reactions">
+            <div style="display: flex; gap: 1vw;">
+                <div class="icon-container like"><i class="fa-regular fa-heart"></i> Like</div>
+                <div class="icon-container comment"><i class="fa-regular fa-comment"></i> Comment</div>
+            </div>
+            <div style="display: flex; gap: 1vw;">
+                <div class="icon-container bookmark"><i class="fa-regular fa-bookmark"></i> Bookmark</div>
+                <div class="icon-container share"><i class="fa-regular fa-share-from-square"></i> Share</div>
+            </div>
+    </div>
+</div>

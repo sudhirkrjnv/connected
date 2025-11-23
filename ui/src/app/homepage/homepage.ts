@@ -6,11 +6,12 @@ import { Register } from '../register/register';
 import { RegisterConfirmation } from '../register-confirmation/register-confirmation';
 import { Rightsidebar } from './rightsidebar/rightsidebar';
 import { Secondrightpanel } from './secondrightpanel/secondrightpanel';
+import { FeedCard } from './feed-card/feed-card';
 
 
 @Component({
   selector: 'app-homepage',
-  imports: [Menubar, Navbar, Login, Register, RegisterConfirmation, Rightsidebar, Secondrightpanel],
+  imports: [Menubar, Navbar, Login, Register, RegisterConfirmation, Rightsidebar, Secondrightpanel, FeedCard],
   templateUrl: './homepage.html',
   styleUrl: './homepage.css'
 })
